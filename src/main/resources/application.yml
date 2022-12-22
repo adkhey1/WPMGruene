@@ -1,14 +1,10 @@
 
 azure:
   activedirectory:
-    tenant-id: 76211efd-e535-4d1b-8668-b96614811efe
+    tenant-id: 5484bd9a-fcc6-4614-95e1-103a68c98ff1
     active-directory-groups: group1, group2
 
 spring:
-  datasource:
-    url: jdbc:mysql://localhost:3306/test?useUnicode=true&characterEncoding=utf8&useSSL=false&useLegacyDatetimeCode=false&serverTimezone=UTC&allowPublicKeyRetrieval=true
-    username: root
-    password: ${DATABASE_PASSWORD}
   security:
     oauth2:
       client:
