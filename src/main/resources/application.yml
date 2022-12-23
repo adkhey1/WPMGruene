@@ -13,3 +13,4 @@ spring:
             client-id: ${AD_CLIENT_ID}
             client-secret: ${AD_CLIENT_SECRET}
 
+//test code
