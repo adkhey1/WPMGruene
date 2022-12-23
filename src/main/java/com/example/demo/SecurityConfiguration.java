@@ -20,10 +20,14 @@ public class SecurityConfiguration extends WebSecurityConfigurerAdapter {
     protected void configure(HttpSecurity http) throws Exception {
         http
                 .authorizeRequests()
+                .antMatchers( "/oauth2/**", "/login/**" ).permitAll()
                 .anyRequest().authenticated()
                 .and()
                 .oauth2Login()
-                .userInfoEndpoint()
-                .oidcUserService(oidcUserService);
+                .defaultSuccessUrl( "/home" );
+
+
+                //.userInfoEndpoint()
+                //.oidcUserService(oidcUserService);
     }
 }
