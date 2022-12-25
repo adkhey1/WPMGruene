@@ -7,8 +7,8 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class HomeController {
 
-    @GetMapping( "home" )
-    public String home( @AuthenticationPrincipal(expression = "claims['name']") String name ) {
-        return String.format( "Hello %s!  welcome to the Security app", name);
+    @GetMapping( "/login/oauth2/code/azure" )
+    public String home() {
+        return String.format( "Hello welcome to the Security app");
     }
 }

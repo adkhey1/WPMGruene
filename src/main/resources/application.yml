@@ -8,7 +8,14 @@ spring:
   security:
     oauth2:
       client:
+        provider:
+          azure:
+            issuer-uri: https://login.microsoftonline.com/5484bd9a-fcc6-4614-95e1-103a68c98ff1/v2.0
         registration:
           azure:
             client-id: ${AD_CLIENT_ID}
             client-secret: ${AD_CLIENT_SECRET}
+            scope:
+              - openid
+              - profile
+              - email
