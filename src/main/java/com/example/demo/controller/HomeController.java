@@ -11,4 +11,15 @@ public class HomeController {
     public String home() {
         return String.format( "Hello welcome to the Security app");
     }
+
+    @GetMapping( "/myProfile" )
+    public String profile() {
+        return "myProfile";
+    }
+
+    @GetMapping( "/dashboard" )
+    public String dashboard() {
+        return "dashboard";
+    }
+
 }
