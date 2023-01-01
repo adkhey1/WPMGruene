@@ -152,16 +152,37 @@
                 <div class="card">
                     <div class="card-body">
 
-                        <p>hiiiii</p>
+                        <h4><a href="#" style="text-decoration: none; color: black;">WPM by Prof. Dr. Jürgen
+                            Schmidhuber</a></h4>
+                        <p>Content for Blauemond</p>
+
+                        <!--
+                        <div id="course-container">
+                           Card elements will be added here
+                        </div>
+                        -->
 
                     </div>
                 </div>
+                <br>
+                <div class="card">
+                    <div class="card-body">
+                        <h4><a href="#" style="text-decoration: none; color: black;">Prozessgetriebene Anwendungssysteme
+                            by Prof. Dr. Thomas Kühne</a></h4>
+                        <p>Content for Kühne</p>
+                    </div>
+                </div>
+                <br>
+                <div class="card">
+                    <div class="card-body">
+                        <h4><a href="#" style="text-decoration: none; color: black;">Software Engineering by Prof.
+                            Hans-Joachim Hof</a></h4>
+                        <p>Content for Hof</p>
+                    </div>
+                </div>
             </div>
-
-
         </div>
     </div>
-</div>
 </div>
 </div>
 
@@ -241,6 +262,10 @@
 
 <script>
 
+    /* this function should be called when the page is loaded
+       it should add the courses to the course-container
+
+
     const courses = [
         {
             title: 'WPM by Prof. Dr. Jürgen Schmidhuber',
@@ -255,6 +280,32 @@
             content: 'Content for Hof'
         }
     ];
+
+    console.log(courses);
+
+    const container = document.querySelector('.course-container');
+
+    // Loop through the array of objects
+    for (let i = 0; i < courses.length; i++) {
+        // Get the current course object
+        const course = courses[i];
+
+        // Create a new course element
+        const courseElement = document.createElement('div');
+        courseElement.classList.add('md-10');
+        courseElement.innerHTML = `
+    <h2>${course.title}</h2>
+    <p>${course.content}</p>
+  `;
+
+        // Add the course element to the container
+        container.appendChild(courseElement);
+
+    }
+
+    console.log(container);
+
+     */
 
 </script>
 
