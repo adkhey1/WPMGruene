@@ -1,4 +1,3 @@
-
 azure:
   activedirectory:
     tenant-id: 5484bd9a-fcc6-4614-95e1-103a68c98ff1 #${tenant-id}
@@ -13,10 +12,13 @@ spring:
             issuer-uri: https://login.microsoftonline.com/5484bd9a-fcc6-4614-95e1-103a68c98ff1/v2.0
         registration:
           azure:
-            client-id: 887dcf8f-05b1-44e4-b488-5b554615995a
+            client-id: 887dcf8f-05b1-44e4-b488-5b554615995a #${client-id}
             client-secret: ${AD_CLIENT_SECRET}
-            redirect-uri: http://localhost:8080/login/oauth2/code/azure
-            #scope:
-            #  - openid
-            #  - profile
-            #  - email
+            redirect-uri: http://localhost:8080/dashboard
+                          #http://localhost:8080/
+                          #http://localhost:8080/oauth2/authorization/azure
+                          #http://localhost:8080/login/oauth2/code/azure
+            scope:
+              - openid
+              - profile
+              - email
